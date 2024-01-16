@@ -1,0 +1,55 @@
+# advanced JavaScript questions
+
+1. Closures and Scope: Explain what closures are and provide an example of how they can be useful in JavaScript.
+
+2. Asynchronous JavaScript: Describe the event loop in JavaScript and how it handles asynchronous operations. Provide an example involving callbacks, promises, or async/await.
+
+3. Prototypes and Inheritance: Explain how prototype-based inheritance works in JavaScript. Provide an example of creating objects and setting up inheritance using prototypes.
+
+4.Functional Programming: Discuss the principles of functional programming and provide an example of a higher-order function or a function that returns another function.
+
+5. ES6 Features: ES6 Features: Explain some features introduced in ECMAScript 6 (ES6) and provide examples for at least three of them, such as arrow functions, template literals, or destructuring.
+
+6. Design Patterns: Describe the Singleton pattern in JavaScript and provide an example of how it can be implemented.
+
+7. Promises and Async/Await: Compare and contrast promises and async/await in JavaScript. Provide scenarios where one might be preferred over the other.
+
+8. Memory Management:Discuss how memory is managed in JavaScript, including concepts like garbage collection. Explain potential memory leaks and ways to avoid them.
+
+9. Event Delegation:
+   Explain the concept of event delegation in the context of handling events in the DOM. Provide an example of how event delegation can be used efficiently.
+   Web APIs and Fetch:
+
+10. Describe the Fetch API in JavaScript and how it can be used to make HTTP requests. Compare it with traditional XMLHttpRequest and discuss the advantages.
+
+# Advance node.js Q
+
+1.Explain the Event Loop in Node.js. How does it work, and why is it important in the context of Node.js?
+
+2.What is the significance of the 'error-first' callback pattern in Node.js? How does it help in handling errors effectively?
+
+3.Describe the role of the 'require' function in Node.js. How does it work, and what is the module resolution algorithm?
+
+4.What are Streams in Node.js, and how do they differ from traditional data handling methods? Provide examples of scenarios where streams can be advantageous.
+
+5.Explain the concept of middleware in Express.js. How does middleware work, and what are some common use cases for middleware in an Express application?
+
+6.What is the purpose of the Node Package Manager (NPM)? How can you handle versioning and dependency management in a Node.js project using NPM?
+
+7.Compare and contrast between 'process.nextTick()' and 'setImmediate()' in Node.js. When would you use one over the other?
+
+8.How does clustering work in Node.js, and why might you use it in a production environment? What are some potential challenges associated with Node.js clustering?
+
+9.Explain the concept of Promises in Node.js. How do they help in handling asynchronous operations, and what are the advantages over traditional callback patterns?
+
+10.What is the significance of the 'Buffer' class in Node.js? How is it used, and in what scenarios might you choose to use Buffers?
+
+11.Describe the purpose of the 'cluster' module in Node.js. How can you create a scalable application using the cluster module, and what considerations should be taken into account?
+
+12.Explain the concept of microservices and how Node.js is well-suited for building microservices architectures. What challenges might you face, and how can they be mitigated?
+
+13.How can you handle memory leaks in a Node.js application? What tools and techniques can be employed for memory management and optimization?
+
+14.What is the role of the 'net' module in Node.js, and how can you create a TCP server using this module? Provide an example of a scenario where a TCP server might be beneficial.
+
+15.Discuss the use of WebSockets in Node.js. How do they differ from traditional HTTP communication, and what are some real-world use cases for WebSockets in a Node.js application?

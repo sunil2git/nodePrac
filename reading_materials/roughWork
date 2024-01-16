@@ -1,0 +1,8 @@
+Arrow function:
+// Traditional Function
+const greet = function(name) {
+  return 'Hello, ' + name + '!';
+};
+
+// Arrow Function
+const greetArrow = name => 'Hello, ' + name + '!';

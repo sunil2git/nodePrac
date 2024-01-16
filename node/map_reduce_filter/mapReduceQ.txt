@@ -1,0 +1,22 @@
+1.Count Words in a Sentence:
+Write a function that takes a sentence as input and returns an object containing the count of each unique word. 
+Use map to split the sentence into an array of words, filter to remove any non-alphabetic characters, 
+and reduce to count the occurrences of each word.
+
+2.Calculate Average Word Length:
+Given a sentence, calculate the average length of the words. Use map to get an array of word lengths, reduce to sum them up, 
+and then divide by the total number of words.
+
+3.Filter and Sum Odd Numbers:
+Given an array of numbers, use filter to select only the odd numbers, then use reduce to find the sum of those odd numbers.
+
+4.Flatten and Filter Arrays:
+Given an array of arrays containing both numbers and strings, use reduce to flatten the arrays into a single array, 
+and then use filter to select only the numbers.
+
+5.Group Words by Length:
+Given an array of words, group them by their length. The result should be an object where keys are word lengths, 
+and values are arrays of words of that length. Use reduce to build the object and map to iterate through the words.
+
+6. Write a function that takes a string as input and returns an object containing the count of each vowel (a, e, i, o, u). 
+Use the reduce method to count the occurrences of each vowel.

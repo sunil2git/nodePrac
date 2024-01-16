@@ -1,0 +1,40 @@
+1. Question: Find the maximum number in an array.
+2. Question: Check if an array contains a specific element.
+3. Question: Remove duplicate elements from an array.
+4. Question: Rotate elements of an array to the right by a given number of steps.
+5. Question: Find the intersection of two arrays.
+6. Write a program or function to count the number of occurrences of a all substring within a given string
+7. Find the Sum of Array Elements:
+   Write a function to calculate and return the sum of all elements in an array.
+8. Reverse an Array:
+   Implement a function to reverse the order of elements in an array.
+9. Check for Palindrome Array:
+   Determine if an array is a palindrome (reads the same backward as forward).
+10. Find the Average of Array Elements:
+    Write a function to compute the average of all elements in an array.
+11. Move Zeroes to the End: \*\*\*
+    Implement a function that moves all zeroes in an array to the end without changing the order of non-zero elements.
+12. the Second Largest Element: \*\*\*
+    Write a function to find and return the second largest element in an array.
+13. Sort an Array:
+    Implement a sorting algorithm (like Bubble Sort, Merge Sort, or Quick Sort) to sort the elements of an array in ascending order.
+14. Find the Missing Number:
+    Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.
+15. Remove Elements by Value:
+    Write a function that removes all occurrences of a specified value from an array.
+16. Transpose a Matrix:
+    Given a matrix represented by a 2D array, write a function to transpose the matrix (swap rows with columns).
+
+java scrpt: map reduce filter : data {car:a}
+sql: select agg(max) where : col1 col2
+
+{car:a}
+
+data concept
+oops concept
+functional program concept
+micro-service
+mongo db, psql
+cursor, triger, stored produre
+
+select col1,col2, count(id) from dept

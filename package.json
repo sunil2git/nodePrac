@@ -1,0 +1,19 @@
+{
+  "name": "node_learning",
+  "version": "0.0.1",
+  "description": "for learn nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sunil kumar",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-http-proxy": "^1.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.0"
+  }
+}

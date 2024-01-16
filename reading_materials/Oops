@@ -1,0 +1,142 @@
+Class and Object:
+
+Definition: A class is a blueprint for creating objects. Objects are instances of classes.
+Real-life Example:
+Class: Car
+Object: An actual car, e.g., a Toyota Camry.
+java
+Copy code
+class Car {
+    String model;
+    String color;
+    int year;
+
+    void start() {
+        System.out.println("Engine started.");
+    }
+
+    void drive() {
+        System.out.println("Car is moving.");
+    }
+}
+
+Car myCar = new Car();
+myCar.model = "Toyota Camry";
+myCar.color = "Silver";
+myCar.year = 2022;
+myCar.start();
+myCar.drive();
+Inheritance:
+
+Definition: Inheritance allows a class (subclass/derived class) to inherit properties and behaviors from another class (superclass/base class).
+Real-life Example:
+Superclass: Animal
+Subclass: Dog
+java
+Copy code
+class Animal {
+    void eat() {
+        System.out.println("Eating...");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Woof! Woof!");
+    }
+}
+
+Dog myDog = new Dog();
+myDog.eat();
+myDog.bark();
+Polymorphism:
+
+Definition: Polymorphism allows objects of different types to be treated as objects of a common type.
+Real-life Example:
+Common Interface: Shape
+Implementations: Circle, Rectangle
+java
+Copy code
+interface Shape {
+    void draw();
+}
+
+class Circle implements Shape {
+    void draw() {
+        System.out.println("Drawing a circle.");
+    }
+}
+
+class Rectangle implements Shape {
+    void draw() {
+        System.out.println("Drawing a rectangle.");
+    }
+}
+
+Shape myShape1 = new Circle();
+myShape1.draw();
+
+Shape myShape2 = new Rectangle();
+myShape2.draw();
+Encapsulation:
+
+Definition: Encapsulation involves bundling data (attributes) and methods that operate on the data into a single unit (class).
+Real-life Example:
+Class: Person
+Attributes: name, age
+Methods: getAge(), setAge()
+java
+Copy code
+class Person {
+    private String name;
+    private int age;
+
+    int getAge() {
+        return age;
+    }
+
+    void setAge(int newAge) {
+        if (newAge > 0) {
+            age = newAge;
+        }
+    }
+}
+
+Person person1 = new Person();
+person1.setAge(25);
+System.out.println("Age: " + person1.getAge());
+Abstraction:
+
+Definition: Abstraction involves simplifying complex systems by providing a simplified view and hiding unnecessary details.
+Real-life Example:
+Abstract Class: Vehicle
+Concrete Implementations: Car, Motorcycle
+java
+Copy code
+abstract class Vehicle {
+    abstract void start();
+
+    void stop() {
+        System.out.println("Vehicle stopped.");
+    }
+}
+
+class Car extends Vehicle {
+    void start() {
+        System.out.println("Car started.");
+    }
+}
+
+class Motorcycle extends Vehicle {
+    void start() {
+        System.out.println("Motorcycle started.");
+    }
+}
+
+Vehicle myCar = new Car();
+myCar.start();
+myCar.stop();
+
+Vehicle myMotorcycle = new Motorcycle();
+myMotorcycle.start();
+myMotorcycle.stop();

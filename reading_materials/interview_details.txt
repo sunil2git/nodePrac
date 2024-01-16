@@ -1,0 +1,75 @@
+# bnt mock interview Q:
+array.sort
+what is find and filter value
+arrow function
+for.. in for.. of 
+on which port these micro-service are running
+consul
+service discovery
+service is connected to consul 
+active mq
+put vs patch
+soap vs rest
+how to manage session.
+redis for session 
+--------------------------------------------------------
+# Project description: 
+
+Agora, a fintech payment solution, simplifies user onboarding through image-based KYC. Partnering with a trusted CBW bank, 
+it ensures verified user KYC. The platform enables user-to-user money transfers, efficient account management, 
+and serves as a reliable card provider. Agora also facilitates hassle-free bill payments, offers a convenient gift card service, 
+and utilize Hawk AI for robust fraud detection, ensuring a secure financial environment.
+The backend is powered by Node.js and Express framwork for server-side logic, with PostgreSQL serving as our reliable database. On the frontend, 
+we've crafted user-friendly applications for both iOS and Android platforms.
+---------------------------------------------------------
+# Agora key points:
+
+Ariad, idology, micro-blank for kyc 
+micro blink - API as well as SDK 
+
+middesk for business
+cbw API for business verify kyc
+
+finastra is s/w where all bank are connected, via using user that data they do kyc.
+-microblink extract the kyc image data and provide to cbw for kyc verify
+- both peer to peer and peer to customer
+- cbw also provide card  
+- cbw handles payments
+- igomoney used as payment gateway
+- AML(anti money laudring) also added with Hawk AI
+- infobip for sms alert
+- firebase for push notification (from mobile side)
+- mail for sftp server
+- sionic for gift card
+
+aws:
+ecs to handle task defination, route53, load balancing via rules define
+
+aogra help small scale bank and provide payment solution
+ROI from the project taking charges from txn
+------------------------------------------------------------------------------------------------------------
+# CICD: 
+Can you describe the stages of a typical CI/CD pipeline, from code commit to production deployment?
+ 
+A typical CI/CD pipeline consists of several stages:
+*Code Commit: Developers commit code changes to the version control system (e.g., Git).
+*Build: The code is built, compiled, or packaged into deployable artifacts.
+*Automated Testing: Various types of tests, such as unit tests, integration tests, and security scans, are performed to validate the code.
+*Artifact Generation: After successful tests, artifacts are generated, versioned, and stored in an artifact repository.
+*Deployment to Staging/Testing: The artifacts are deployed to a staging environment for further testing.
+*Functional and Integration Testing: The application is tested in an environment that closely resembles the production environment.
+*Approval Gate: Human or automated approval is often required before proceeding to production.
+*Deployment to Production: If approved, the code is deployed to the production environment.
+ 
+ 
+we are using Jenkins tool for implementing CICD pipeline :
+Jenkins is an open-source automation server that helps automate various aspects of software development, such as building, testing, and deploying code. It allows developers to set up continuous integration and continuous delivery (CI/CD) pipelines, streamlining the development and release process.
+ 
+ 
+flow of CICD pipeline:
+gitlab (source code management)---->>jenkins tool (code build(create docker image as per dockerfile)->test -->deploy ) -->>docker hub/aws cloud
+
+
+# AWS topics:
+
+1. 
