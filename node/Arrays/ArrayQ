@@ -24,6 +24,12 @@
     Write a function that removes all occurrences of a specified value from an array.
 16. Transpose a Matrix:
     Given a matrix represented by a 2D array, write a function to transpose the matrix (swap rows with columns).
+17. Find the Common Elements:
+    Write a function to find and return an array containing elements common to two given arrays.
+18. Question: Find the Union of Two Arrays:
+    Write a function that takes two arrays as parameters and returns a new array containing unique elements from both arrays (the union).
+19. Question: Chunk an Array:
+    Write a function that takes an array and a chunk size as parameters and returns a new array with elements grouped into chunks of the specified size.
 
 java scrpt: map reduce filter : data {car:a}
 sql: select agg(max) where : col1 col2
