@@ -7,6 +7,9 @@ function wordAvg(line) {
 
   console.log('wordsCount', wordsCount.length)
 
+  console.log('wordsCount', typeof wordsCount)
+
+
   let totalCharsInWords = wordsCount.reduce((sum, word) => word + sum, 0)
   console.log('totalCharsInWords', totalCharsInWords)
 

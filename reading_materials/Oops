@@ -52,6 +52,7 @@ myDog.bark();
 Polymorphism:
 
 Definition: Polymorphism allows objects of different types to be treated as objects of a common type.
+If one task is performed in different ways, it is known as polymorphism.
 Real-life Example:
 Common Interface: Shape
 Implementations: Circle, Rectangle

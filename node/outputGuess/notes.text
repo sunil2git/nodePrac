@@ -1,0 +1,121 @@
+Micro and Macrotask Output Guess Questions:
+
+Scenario 1:
+
+javascript
+Copy code
+console.log('Start');
+
+setTimeout(() => {
+  console.log('Macrotask 1');
+}, 0);
+
+setImmediate(() => {
+  console.log('Macrotask 2');
+});
+
+Promise.resolve().then(() => {
+  console.log('Microtask 1');
+});
+
+process.nextTick(() => {
+  console.log('Microtask 2');
+});
+
+console.log('End');
+What will be the first line of output?
+Scenario 2:
+
+javascript
+Copy code
+console.log('Start');
+
+setImmediate(() => {
+  console.log('Macrotask 1');
+});
+
+setTimeout(() => {
+  console.log('Macrotask 2');
+}, 0);
+
+process.nextTick(() => {
+  console.log('Microtask 1');
+});
+
+Promise.resolve().then(() => {
+  console.log('Microtask 2');
+});
+
+console.log('End');
+What will be the last line of output?
+Scenario 3:
+
+javascript
+Copy code
+console.log('Start');
+
+setTimeout(() => {
+  console.log('Macrotask 1');
+}, 0);
+
+process.nextTick(() => {
+  console.log('Microtask 1');
+});
+
+Promise.resolve().then(() => {
+  console.log('Microtask 2');
+});
+
+setImmediate(() => {
+  console.log('Macrotask 2');
+});
+
+console.log('End');
+In what order will the microtasks be executed?
+Scenario 4:
+
+javascript
+Copy code
+console.log('Start');
+
+setImmediate(() => {
+  console.log('Macrotask 1');
+});
+
+process.nextTick(() => {
+  console.log('Microtask 1');
+});
+
+setTimeout(() => {
+  console.log('Macrotask 2');
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log('Microtask 2');
+});
+
+console.log('End');
+In what order will the macrotasks be executed?
+Scenario 5:
+
+javascript
+Copy code
+console.log('Start');
+
+setTimeout(() => {
+  console.log('Macrotask 1');
+}, 0);
+
+setImmediate(() => {
+  console.log('Macrotask 2');
+});
+
+process.nextTick(() => {
+  console.log('Microtask 1');
+});
+
+Promise.resolve().then(() => {
+  console.log('Microtask 2');
+});
+
+console.log('End');

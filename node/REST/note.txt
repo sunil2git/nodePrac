@@ -1,0 +1,15 @@
+1. We can implement the authorization in sample login and some task perform by UserActivation
+// Custom middleware to check if the user has a specific role
+function isAdmin(req, res, next) {
+    if (req.isAuthenticated() && req.user.role === 'admin') {
+      return next();
+    } else {
+      res.status(403).send('Unauthorized');
+    }
+  }
+  
+  // Example route protected by the isAdmin middleware
+  app.get('/admin', isAdmin, (req, res) => {
+    res.send('Admin Dashboard');
+  });
+  

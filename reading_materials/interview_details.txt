@@ -21,6 +21,21 @@ and serves as a reliable card provider. Agora also facilitates hassle-free bill 
 and utilize Hawk AI for robust fraud detection, ensuring a secure financial environment.
 The backend is powered by Node.js and Express framwork for server-side logic, with PostgreSQL serving as our reliable database. On the frontend, 
 we've crafted user-friendly applications for both iOS and Android platforms.
+
+Hello, I'm Sunil Kumar. I completed my master's in computer applications. I started my professional journey as a junior software developer at
+Figmd,a Pune-based IT company. Currently, I am a backend developer at BNT Soft.
+Throughout my career, I have gained experience in various technologies, including Spark, Spark-Scala, Kafka, Hive, Hadoop, and Scala. 
+Presently, I work with a technology stack that includes Node.js, Express, and PostgreSQL
+If I talk about my current project, so project name is agora
+
+So Agora is fintech based app which provide banking solution to its user
+It provides many features, including simplified user onboarding through image-based KYC.
+Partnering with a trusted CBW bank,it ensures verified user KYC which onboarding on app.
+The platform enables user-to-user, user to merchant money transfers, efficient account management, 
+and serves as a reliable card provider
+Agora also facilitates hassle-free bill payments, offers a convenient gift card service, 
+and utilize Hawk AI for robust fraud detection, ensuring a secure financial environment.
+All of these features are packed into beautifully crafted user-friendly apps for both iOS and Android platforms.
 ---------------------------------------------------------
 # Agora key points:
 

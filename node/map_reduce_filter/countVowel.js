@@ -1,43 +1,30 @@
 // 6. Write a function that takes a string as input and returns an object containing the count of each vowel (a, e, i, o, u).
 // Use the reduce method to count the occurrences of each vowel.
 
-function countVowels(words) {
-  let wordList = words
-    .split(' ')
-    .map((word) => [word.charAt(0).toLowerCase(), word.toLowerCase()])
-  console.log(wordList)
+function countVowels(str) {
+  // Define an array of vowels
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
 
-  groupedByFirstLetter = wordList.reduce((result, [letter, word]) => {
-    result[letter] = result[letter] || []
-    let vowelsCondition =
-      result[letter] == 'a' ||
-      result[letter] == 'e' ||
-      result[letter] == 'i' ||
-      result[letter] == 'o' ||
-      result[letter] == 'u'
-    result[letter].push(word)
+  // Use the reduce method to count occurrences of each vowel
+  const vowelCount = str.split('').reduce((count, char) => {
+    // Check if the character is a vowel
+    if (vowels.includes(char.toLowerCase())) {
+      // Convert the character to lowercase to handle both cases
+      char = char.toLowerCase();
 
-    return result
-  }, {})
+      // Increment the count for the specific vowel
+      count[char] = (count[char] || 0) + 1;
+    }
+    return count;
+  }, {});
 
-  const vowels = 'aeiou'
-
-  const vowelCount = Object.entries(groupedByFirstLetter).reduce(
-    (result, [key, value]) => {
-      if (vowels.includes(key)) {
-        result[key] = value.length
-      }
-      return result
-    },
-    {}
-  )
-
-  console.log(groupedByFirstLetter)
+  return vowelCount;
 }
 
-let words =
-  'eggs elephant owl apple onnion orange iron indian itally israel usa uae ukraine russia'
+// Example usage:
+const inputString = "Hello, how are you?";
+const result = countVowels(inputString);
+console.log(result);
+// Output: { a: 1, e: 2, i: 0, o: 3, u: 1 }
 
-console.log(typeof words)
 
-countVowels(words)
