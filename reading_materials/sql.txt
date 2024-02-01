@@ -1,0 +1,81 @@
+1.  A cursor is a database object that allows for the traversal and manipulation of records in a result set. 
+It provides a way to iterate over a set of rows returned by a query and perform operations on each row individually. 
+Cursors are typically used within stored procedures, 
+triggers, or batches to process data row by row
+
+
+-- Create a sample employees table
+CREATE TABLE employees (
+    employee_id SERIAL PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50)
+);
+
+-- Insert some sample data
+INSERT INTO employees (first_name, last_name) VALUES ('John', 'Doe');
+INSERT INTO employees (first_name, last_name) VALUES ('Jane', 'Smith');
+INSERT INTO employees (first_name, last_name) VALUES ('Bob', 'Johnson');
+
+-- Create a stored procedure with a cursor
+CREATE OR REPLACE PROCEDURE PrintEmployeeNames()
+LANGUAGE plpgsql
+AS $$
+DECLARE
+    emp_cursor CURSOR FOR SELECT first_name, last_name FROM employees;
+    emp_record RECORD;
+BEGIN
+    -- Open the cursor
+    OPEN emp_cursor;
+
+    -- Fetch and print each record
+    LOOP
+        FETCH emp_cursor INTO emp_record;
+        EXIT WHEN NOT FOUND;
+
+        -- Print the employee name
+        RAISE NOTICE 'Employee Name: % %', emp_record.first_name, emp_record.last_name;
+    END LOOP;
+
+    -- Close the cursor
+    CLOSE emp_cursor;
+END;
+$$;
+
+-- Call the stored procedure to print employee names
+CALL PrintEmployeeNames();
+
+
+2.  trigger is a set of instructions or a predefined set of actions that are automatically executed, or "triggered," 
+in response to specific events on a particular table or view. Triggers are used to enforce business rules, perform validation, 
+or automate actions based on changes to data. The events that can activate triggers include INSERT, UPDATE, DELETE, 
+and sometimes other database-specific events.
+
+Triggers are often associated with specific tables, and they are executed before or after the triggering event. 
+There are two main types of triggers
+i) BEFORE Triggers:
+ii)AFTER Triggers:
+
+CREATE TRIGGER AfterInsertTrigger
+ON YourTableName
+AFTER INSERT
+AS
+BEGIN
+    -- Trigger logic (e.g., logging, additional updates, etc.)
+    PRINT 'A new row has been inserted into YourTableName.';
+END;
+
+3. Stored procedures: are prepared SQL code that you save so you can reuse it over and over again. 
+So if you have an SQL query that you write over and over again, save it as a stored procedure and call it to run it. 
+You can also pass parameters to stored procedures so that the stored procedure can act on the passed parameter values.
+
+-- Assuming you have a stored procedure with parameters
+CREATE OR REPLACE PROCEDURE GetEmployeeDetails(employee_id INT)
+AS $$
+BEGIN
+    -- Procedure logic to retrieve employee details
+    SELECT * FROM employee WHERE employee_id = employee_id;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Call the stored procedure with parameters
+SELECT GetEmployeeDetails(1);
