@@ -28,13 +28,11 @@ Throughout my career, I have gained experience in various technologies, includin
 Presently, I work with a technology stack that includes Node.js, Express, and PostgreSQL
 If I talk about my current project, so project name is agora
 
-So Agora is fintech based app which provide banking solution to its user
-It provides many features, including simplified user onboarding through image-based KYC.
-Partnering with a trusted CBW bank,it ensures verified user KYC which onboarding on app.
-The platform enables user-to-user, user to merchant money transfers, efficient account management, 
-and serves as a reliable card provider
-Agora also facilitates hassle-free bill payments, offers a convenient gift card service, 
-and utilize Hawk AI for robust fraud detection, ensuring a secure financial environment.
+So Agora is a fintech application offering banking solutions to its users. It encompasses various features,
+such as streamlined user onboarding through image-based KYC. Collaborating with a reputable CBW bank, 
+it ensures verified user KYC during the onboarding process. The platform supports user-to-user and user-to-merchant money transfers, 
+effective account management, and acts as a dependable card provider. Agora also simplifies bill payments, provides a convenient gift 
+card service, and employs a robust fraud detection system for a secure financial environment.
 All of these features are packed into beautifully crafted user-friendly apps for both iOS and Android platforms.
 ---------------------------------------------------------
 # Agora key points:
