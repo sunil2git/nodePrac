@@ -1,0 +1,70 @@
+ActiveMQ:
+
+ActiveMQ is an open-source message broker that implements the Java Message Service (JMS) API. It is developed by the Apache Software Foundation
+ and written in Java. ActiveMQ is designed to provide scalable, reliable, and high-performance messaging in distributed systems.
+
+ npm install amqplib
+
+ ---------------------------------
+ // Producer (Sender) Code:
+
+ const amqp = require('amqplib');
+
+async function sendMessage() {
+  try {
+    // Connect to the RabbitMQ server
+    const connection = await amqp.connect('amqp://localhost');
+    const channel = await connection.createChannel();
+
+    // Declare a queue
+    const queueName = 'hello';
+    await channel.assertQueue(queueName, { durable: false });
+
+    // Send a message to the queue
+    const message = 'Hello, Microservices!';
+    channel.sendToQueue(queueName, Buffer.from(message));
+    console.log(`Sent: ${message}`);
+
+    // Close the connection
+    setTimeout(() => {
+      connection.close();
+      process.exit(0);
+    }, 500);
+  } catch (error) {
+    console.error('Error:', error.message);
+  }
+}
+
+sendMessage();
+------------------------------------------------------------
+// Consumer (Receiver) Code:
+
+const amqp = require('amqplib');
+
+async function receiveMessage() {
+  try {
+    // Connect to the RabbitMQ server
+    const connection = await amqp.connect('amqp://localhost');
+    const channel = await connection.createChannel();
+
+    // Declare a queue
+    const queueName = 'hello';
+    await channel.assertQueue(queueName, { durable: false });
+
+    // Receive messages from the queue
+    console.log('Waiting for messages. To exit press CTRL+C');
+    channel.consume(
+      queueName,
+      (msg) => {
+        const message = msg.content.toString();
+        console.log(`Received: ${message}`);
+      },
+      { noAck: true } // Acknowledge the message automatically
+    );
+  } catch (error) {
+    console.error('Error:', error.message);
+  }
+}
+
+receiveMessage();
+

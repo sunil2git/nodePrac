@@ -216,3 +216,30 @@ Certainly, I can provide additional coding and output questions for JavaScript a
    If the `employee_salaries` table contains salary information, what is the calculated average salary for all employees?
 
 These additional coding and output questions provide practical scenarios for assessing the candidate's skills in both JavaScript and SQL. They cover a range of programming and database tasks.
+
+# first round interview Q
+
+bnt mock interview Q:
+array.sort
+what is find and filter value
+arrow function
+for.. in for.. of 
+on which port these micro-service are running
+consul
+service discovery
+service is connected to consul 
+active mq
+put vs patch
+soap vs rest
+how to manage session.
+redis for session 
+-----------------------------------------------------------------
+1. advantages and disadvantages of microservice architechture.
+2. How to design a microservice.
+3. Domain driven design ddd ?
+4. Micro service design pattern ?
+ -saga 
+ - CQRS 
+ - Cricut braker
+ - API gateway design pattern
+ 
