@@ -1,26 +1,26 @@
-console.log('Start');
+console.log('Start')
 
 setTimeout(() => {
-  console.log('Macrotask 1');
-}, 0);
+  console.log('Macrotask 1')
+}, 0)
 
 setImmediate(() => {
-  console.log('Macrotask 2');
-});
+  console.log('Macrotask 2')
+})
 
 Promise.resolve().then(() => {
-  console.log('Microtask 3');
-});
+  console.log('Microtask 3')
+})
 
 process.nextTick(() => {
-  console.log('Microtask 4');
-});
+  console.log('Microtask 4')
+})
 
-console.log('End');
+console.log('End')
 
-//start
-//end
-//2
-//4
-//3
-//1
+// Start
+// End
+// Microtask 4
+// Microtask 3
+// Macrotask 1
+// Macrotask 2

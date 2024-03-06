@@ -33,6 +33,22 @@ sql
 5. Sequence
 6. function
 7. stored procedure
+-----------------------------
+
+1.what is advantage of node js and microservice architecture
+2. how can you handle concurrent request.
+3. what is the priorty of settimeout, setinterval and nextticket
+4.how communicate happened between two microservice
+5. eventloop
+6. event queue
+7. output guess: for (let i = 0; i < 5; i++) {
+  setTimeout(() => console.log(i));
+}
+8. write code to find count of charachter in input = "aassstuvwwwwx"
+9. show unique value input = "aassstuvwwwwx"
+10. What is solid design principle
+11. saga microservices design pattern 
+
 --------------------------------------------------------
 # Project description: 
 
