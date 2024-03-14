@@ -38,6 +38,7 @@ sql
 1.what is advantage of node js and microservice architecture
 2. how can you handle concurrent request.
 3. what is the priorty of settimeout, setinterval and nextticket
+process.nextTick > setImmediate > setTimeout. 
 4.how communicate happened between two microservice
 5. eventloop
 6. event queue
